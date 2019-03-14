@@ -1,0 +1,54 @@
+
+<!--This program will allow users to log in with their account, create an account,
+and proceed to the User's Home page-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome | Spartan Online Banking</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <ul>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section id="home-head" class="contact">
+  <h1>Spartan Online Banking</h1>
+</section>
+<section id="main-content">
+  <div class="text-intro">
+    <h2>Please Log in..</h2>
+  </div>
+  <center><body><form><!-- action="14_js-functions.html" -->
+      Username:<br>
+      <input type="text" id="usr" name="usr"><br>
+      User password:<br>
+      <input type="password" id="psw" name="psw"><br>
+      <input type="reset" value="Log In" onclick="validate()">
+    </form>
+  </center>
+    <script>
+      function validate() {
+        let usr = document.getElementById("usr").value;
+        let psw = document.getElementById("psw").value;
+        if (psw === "team2") {
+          alert("Welcome, " + usr);
+          window.location.href = "HOMEPAGE.html";
+
+        } else {
+          alert("Please try again!");
+        }
+      }
+    
+    </script>
+  </body>
+</section>
+</body>
+</html>

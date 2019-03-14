@@ -1,0 +1,63 @@
+<!--This code will allow current user search for the nearest Chase Bank ATM-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Spartan Online Banking | ATM Locator</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <ul>
+          <li><a href="HOMEPAGE.html" >Home</a></li>
+          <li><a href="Transactions.html">Transactions</a></li>
+          <li><a href="Funds.html">Funds</a></li>
+          <li><a href="ATMlocator.html" class="active">ATM Locator</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section id="video" class="home">
+  <h1>Nearby Chase ATMS</h1>
+  <h2></h2>
+</section>
+<section id="main-content">
+  <div class="text-intro">
+    <h2></h2>
+    <CENTER>
+    
+      </CENTER>
+  </div>
+
+
+ <center><style>
+        #map {
+          width: 100%;
+          height: 400px;
+          background-color: grey;
+        }
+       </style>
+    <body>
+        <div id="map" style="width: 500px; height: 500px"></div>
+        <script>
+          function initMap() {
+            let uluru = { lat: 37.361970, lng: -121.854150 };
+            let map = new google.maps.Map(document.getElementById("map"), { zoom: 10, center: uluru });
+            let marker = new google.maps.Marker({ position: uluru, map: map });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74I89V-nG4U9P3LrOILLeLLBlI8FcwxI&callback=initMap">
+        </script>
+      </body>
+    </html></center>
+    
+
+</section>
+<footer>
+ 
+</footer>
+</body>
